@@ -1,0 +1,21 @@
+{
+    "controlnet_train": {
+        "batch_size": 2,
+        "cache_rate": 0.0,
+        "fold": null,
+        "lr": 1e-5,
+        "n_epochs": 10,
+        "weighted_loss_label": [129],
+        "weighted_loss": 1,
+        "conditional_free_guidance": 0.1
+    },
+    "controlnet_infer": {
+       "num_inference_steps": 30,
+       "autoencoder_sliding_window_infer_size": [80, 80, 80],
+       "autoencoder_sliding_window_infer_overlap": 0.4,
+       "use_cfg": true,
+       "guidance_scale": 5.0,
+       "batch_size_val": 1,
+       "modality": 1
+    }
+}

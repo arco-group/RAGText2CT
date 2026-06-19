@@ -1,0 +1,16 @@
+{
+    "model_dir": "./models",
+    "output_dir": "./predictions/rag",
+    "tfevent_path": "./outputs/tfevent",
+    "trained_autoencoder_path": "./models/autoencoder_epoch273.pt",
+    "trained_diffusion_path": "./models/unet_rflow_200ep.pt",
+    "trained_controlnet_path": "./models/controlnet_rag_best.pt",
+    "exp_name": "rag_text2ct_inference",
+    "data_base_dir": ".",
+    "json_data_list": "dataset/validation_data_volumes.json",
+    "embedding_base_dir": "./embeddings",
+    "report_encoder_model": "xgem_3D",
+    "rag_embeddings_path": "./retrieval/impression_embeddings.npy",
+    "rag_paths_path": "./retrieval/impression_paths.json",
+    "rag_mask_base_dir": "."
+}

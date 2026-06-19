@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
+.venv/
+
+# Runtime artifacts
+models/
+predictions/
+embeddings/
+outputs/
+logs/
+error/
+output/
+dataset/
+*.pt
+*.ckpt
+*.npy
+legacy/
+
+# Slurm/cluster outputs
+slurm-*.out
+slurm-*.err
+*.log
+
+HF_README_WEIGHTS.md

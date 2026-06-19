@@ -1,0 +1,14 @@
+{
+    "data_base_dir": ".",
+    "embedding_base_dir": "./embeddings",
+    "json_data_list": "dataset/validation_data_volumes.json",
+    "model_dir": "./models",
+    "model_filename": "unet_rflow_200ep.pt",
+    "output_dir": "./predictions",
+    "output_prefix": "unet_rflow",
+    "trained_autoencoder_path": "./models/autoencoder_epoch273.pt",
+    "existing_ckpt_filepath": "unet_rflow_200ep.pt",
+    "use_cfg": true,
+    "guidance_scale": 5.0,
+    "report_encoder_model": "xgem_3D"
+}

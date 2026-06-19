@@ -1,0 +1,13 @@
+{
+    "model_dir": "./models",
+    "output_dir": "./outputs",
+    "tfevent_path": "./outputs/tfevent",
+    "trained_autoencoder_path": "./models/autoencoder_epoch273.pt",
+    "trained_diffusion_path": "./models/unet_rflow_200ep.pt",
+    "trained_controlnet_path": null,
+    "exp_name": "rag_text2ct_controlnet",
+    "data_base_dir": ".",
+    "json_data_list": "dataset/train_data_volumes.json",
+    "embedding_base_dir": "./embeddings",
+    "report_encoder_model": "xgem_3D"
+}
