@@ -5,10 +5,6 @@ Molino, D., Caruso, C. M., Soda, P., Guarrasi, V. (2026)
 
 This repository extends the original **Text2CT** model with a retrieval-guided anatomical branch. Given a report embedding, the pipeline retrieves a semantically related case and uses its anatomical mask as structural guidance through a 3D `ControlNetMaisi` branch.
 
-The companion weights repo is:
-
-- `dmolino/RAGText2CT`
-
 ## Overview
 
 The release is organized around four stages:
@@ -31,18 +27,26 @@ Python `3.10+` is recommended.
 pip install -r requirements.txt
 ```
 
-## Expected Weights
+### Weights (place in `models/`)
 
+You can download them from Hugging Face at [Weights](https://huggingface.co/dmolino/RAGText2CT):
+```python
+from huggingface_hub import snapshot_download
+
+repo_id = "dmolino/RAGText2CT"
+
+snapshot_download(
+    repo_id=repo_id,
+    repo_type="model",
+    local_dir="your_local_path" 
+)
+```
 Place checkpoints in `models/`.
 
 - `autoencoder_epoch273.pt`
 - `unet_rflow_200ep.pt`
 - `CLIP3D_Finding_Impression_30ep.pt`
-- `controlnet_rag_best.pt` or your own trained ControlNet checkpoint
-
-The final Hugging Face packaging for the RAG ControlNet weights can be decided later; config placeholders are already in place.
-
-If you are using the standalone weights release, point `--weights-dir` to `hf_ragtext2ct/models`.
+- `controlnet_rag_best.pt`
 
 ## Data Layout
 
