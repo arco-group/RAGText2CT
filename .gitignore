@@ -6,7 +6,7 @@ __pycache__/
 .venv/
 
 # Runtime artifacts
-models/
+/models/
 predictions/
 embeddings/
 outputs/
