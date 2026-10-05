@@ -1,7 +1,4 @@
 # 🎉🎉🎉 MICCAI 2026 ACCEPTED 🎉🎉🎉
-# 👉 Code release for **[Retrieval-Augmented Anatomical Guidance for Text-to-CT Generation](https://arxiv.org/abs/2603.08305)**
-
-Molino, D., Caruso, C. M., Soda, P., Guarrasi, V. (2026)
 
 This repository extends the original **Text2CT** model with a retrieval-guided anatomical branch. Given a report embedding, the pipeline retrieves a semantically related case and uses its anatomical mask as structural guidance through a 3D `ControlNetMaisi` branch.
 
