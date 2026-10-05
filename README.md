@@ -173,10 +173,12 @@ This demo encodes the report, uses the provided mask as the singleton retrieval 
 ## Citation
 
 ```bibtex
-@article{Molino2026RAGText2CT,
-  title={Retrieval-Augmented Anatomical Guidance for Text-to-CT Generation},
+@inproceedings{molino2026retrieval,
+  title={Retrieval-augmented anatomical guidance for text-to-ct generation},
   author={Molino, Daniele and Caruso, Camillo Maria and Soda, Paolo and Guarrasi, Valerio},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={450--460},
   year={2026},
-  journal={arXiv preprint arXiv:2603.08305}
+  organization={Springer}
 }
 ```
